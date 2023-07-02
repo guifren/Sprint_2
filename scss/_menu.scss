@@ -1,0 +1,134 @@
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn {
+   
+    cursor: pointer;
+  
+    @include transition-ease;
+    z-index:10;
+
+    &_burger {
+      
+         position:absolute;
+         z-index:2;
+         right: 9rem;
+         width: 28px;
+         top: 3.5rem;
+         height: 3px;
+         background: $primary;
+        
+        @include transition-ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: $primary;
+            @include transition-ease;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 3px;
+            background: $primary;
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(720deg);
+            background: transparent;
+            
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+                background-color: white;
+          
+            }
+
+            &::after {
+                width:28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+                background-color: white;
+                
+            }
+        }
+    }
+}
+
+.nav-mobile {
+    z-index:1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.95;
+    visibility: hidden;
+    
+  
+    &.open {
+      visibility: visible;
+    }
+  
+    .menu-nav {
+      padding-top: 3rem;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: #2f354f;
+      list-style-type: none;
+      padding-right: 1rem;
+      transform: translateY(-100%);
+      @include transition-ease;
+  
+      &.open {
+        transform: translateY(0);
+      }
+  
+      &_item {
+        transform: translateX(100vw);
+        @include transition-ease;
+  
+        &.open {
+         transform: translateX(0); 
+        }
+  
+        &.active > a {
+          color: white;
+        }
+      }
+  
+      &_link {
+        display: inline-block;
+        color:white;
+        text-decoration: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: 300;
+        @include transition-ease;
+  
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    .menu-nav > ul {
+      text-decoration: none;
+    }
+  }
+  
+  @for $i from 1 through 6 {
+    .menu-nav_item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.15s;
+    }
+  }

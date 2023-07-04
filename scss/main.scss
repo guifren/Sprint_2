@@ -1,7 +1,6 @@
 
 
 $font-primary: "Rubik", sans-serif;
-$bluebackground-height: 90%;
 $primary:       #5265E1;
 $secondary:      #FA5959;
 $enable-negative-margins: true;
@@ -11,7 +10,7 @@ $nav-link-hover-color: $secondary;
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import "./_menu";
+@import "./_tabs";
 @import "./_cards";
 @import "./_accordion";
 @import "./_footer";
@@ -22,7 +21,7 @@ $nav-link-hover-color: $secondary;
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,7 +32,7 @@ $nav-link-hover-color: $secondary;
 
 html, body {
     max-width: 100% !important;
-  overflow-x: hidden !important;
+    overflow-x: hidden !important;
     max-width: 100%;
     font-family: $font-primary;
     margin: 0;
@@ -121,8 +120,17 @@ h4 {
 .btn-primary {
     border-color: $primary;
 }
+.btn-primary:hover {
+    color: $primary;
+    background: #f8f9fa;
+;
+}
 .btn-light {
     border-color: #f8f9fa;
+}
+.btn-light:hover {
+    color: rgb(16, 16, 16);
+    background: #f8f9fa;
 }
 .features {
     padding-top: 100px;
@@ -130,7 +138,7 @@ h4 {
 }
 
 .bg-gradient-primary-to-secondary {
-    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    background: linear-gradient(45deg, $primary, #9f1ae2) !important;
     padding-top: 80px;
     padding-bottom: 80px;
     margin-top: 150px;

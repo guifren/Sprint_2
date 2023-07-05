@@ -24,28 +24,44 @@
 
     <!-- Header-->
     <header class="container">
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img
-      class="logo"
-      src="./assets/img/logo-bookmark.svg"
-    /></a>
-<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link" href="#">FEATURES</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">PRICING</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">CONTACT</a>
-  </li>
-  <li class="nav-item">
-    <button type="button" class="btn btn-danger">LOGIN</button>
-  </li>
-</ul>
-</div>
-</nav>
+
+      
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+
+              <a class="navbar-brand" href="#"><img
+                class="logo"
+                src="./assets/img/logo-bookmark.svg"
+              /></a>
+            
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="row collapse navbar-collapse" id="navmenu">
+    
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                          <button type="button" class="btn btn-danger">LOGIN</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
     </header>
 
 <!-- Hero-->
@@ -139,6 +155,7 @@
             </div>
           </div>
         </div>
+      </section>
         <main class="container features">
           <section class="row">
             <div class="col-12 col-lg-6 hero-container order-1 mb-5">
@@ -213,7 +230,7 @@
       </section>
     
           <!-- Accordion-->
-          <section class="mt-5 mb-5">
+          <section class="container mt-5 mb-5">
             <div class="row pb-5">
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
@@ -272,14 +289,15 @@
 
     <!-- Newsletter section-->
     <section class="bg-gradient-primary-to-secondary" id="newsletter">
-      <div class="container px-5">
-        <h2 class="text-center text-white font-alt mb-4">Stay up-to-date with what we're doing</h2>
+      <div class="container form">
+        <h4 class="text-center text-white mb-4">35.000+ ALREADY JOINED</h4>
+        <h2 class="text-center text-white mb-4">Stay up-to-date with what we're doing</h2>
         <div
-          class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+          class="row d-flex flex-column flex-lg-row align-items-center justify-content-center"
         >
         <form class="form-inline" method="post">
-          <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-          <div class="form-group"><button class="btn btn-primary" type="button">Subscribe </button></div>
+          <div class="form-group mb-4"><input class="form-control" type="email" name="email" placeholder="Enter your email adress"></div>
+          <div class="form-group"><button class="btn btn-danger" type="button">Contact us</button></div>
       </form>
         </div>
       </div>
@@ -308,7 +326,7 @@
               </div>
             </div>
               <div class="col-md-2 col-lg-2">
-                <div class="social-icons text-end">
+                <div class="social-icons">
                   <a href="#" class="me-2"><img src="./assets/img/icon-facebook.svg" alt="Facebook" class="social"></a>
                   <a href="#" class="me-2"><img src="./assets/img/icon-twitter.svg" alt="Twitter" class="social"></a>
                 </div>

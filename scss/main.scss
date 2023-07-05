@@ -9,9 +9,11 @@ $nav-link-hover-color: $secondary;
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "./_navbar";
 @import "./_tabs";
 @import "./_cards";
 @import "./_accordion";
+@import "./_form";
 @import "./_footer";
 
 :root {
@@ -81,12 +83,6 @@ h4 {
     }
     }
 
-.nav-item {
-    padding: 0px 25px 0 25px;
-    display: flex;
-    align-items: center;
-}
-
 .btn {
     font-weight: 500;
     padding-left: 30px;
@@ -110,6 +106,7 @@ h4 {
 
 .btn-danger {
     background-color: $secondary;
+    border-color: $secondary; 
     color: white;
 }
 .btn-danger:hover {
@@ -137,7 +134,7 @@ h4 {
 }
 
 .bg-gradient-primary-to-secondary {
-    background: linear-gradient(45deg, $primary, #9f1ae2) !important;
+    background: linear-gradient(45deg, $primary, $secondary) !important;
     padding-top: 80px;
     padding-bottom: 80px;
     margin-top: 150px;

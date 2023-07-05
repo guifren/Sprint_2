@@ -14120,6 +14120,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-item {
+  padding: 0px 25px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    padding-top: 200px;
+    height: 50px;
+    width: 100%;
+  }
+}
 #myTab li {
   width: 100%;
   text-align: center;
@@ -14303,6 +14320,18 @@ textarea.form-control-lg {
   color: #FA5959;
 }
 
+.form {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.form-control {
+  text-align: center;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 /* Footer */
 .footer {
   background-color: #242946;
@@ -14329,7 +14358,7 @@ footer a {
 footer a:hover,
 footer a:active,
 footer a:focus {
-  color: var(--bs-red);
+  color: #FA5959;
   text-decoration: none;
 }
 
@@ -14349,7 +14378,7 @@ footer a:focus {
 }
 
 .social-icons a:hover {
-  color: var(--bs-red);
+  color: #FA5959;
 }
 
 /* Footer en mobile responsive */
@@ -14367,7 +14396,10 @@ footer a:focus {
             align-items: center;
   }
   .social-icons {
-    margin-top: 10px;
+    margin-top: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 :root {
@@ -14440,16 +14472,6 @@ h4, .h4 {
     margin-right: 20px;
   }
 }
-.nav-item {
-  padding: 0px 25px 0 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .btn {
   font-weight: 500;
   padding-left: 30px;
@@ -14474,6 +14496,7 @@ h4, .h4 {
 
 .btn-danger {
   background-color: #FA5959;
+  border-color: #FA5959;
   color: white;
 }
 
@@ -14506,7 +14529,7 @@ h4, .h4 {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #5265E1, #9f1ae2) !important;
+  background: linear-gradient(45deg, #5265E1, #FA5959) !important;
   padding-top: 80px;
   padding-bottom: 80px;
   margin-top: 150px;

@@ -1,5 +1,4 @@
 
-
 $font-primary: "Rubik", sans-serif;
 $primary:       #5265E1;
 $secondary:      #FA5959;
@@ -13,7 +12,6 @@ $nav-link-hover-color: $secondary;
 @import "./_tabs";
 @import "./_cards";
 @import "./_accordion";
-@import "./_form";
 @import "./_footer";
 
 :root {
@@ -62,12 +60,7 @@ h2 {
     text-align: center;
     margin-top: 150px;
 }
-@media (max-width: 992px) {
-.h2-features {
-    text-align: center;
-    margin-top: 100px;
-}
-}
+
 h4 {
     font-weight: 400;
     color: grey;
@@ -128,14 +121,4 @@ h4 {
     color: rgb(16, 16, 16);
     background: #f8f9fa;
 }
-.features {
-    padding-top: 100px;
-    padding-bottom: 200px;
-}
 
-.bg-gradient-primary-to-secondary {
-    background: linear-gradient(45deg, $primary, $secondary) !important;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-top: 150px;
-  }

@@ -1,58 +1,48 @@
 /* Footer */
-.footer {
+
+  .footer-nav {
     background-color: #242946;
     color: white;
-    padding: 30px;
-    margin-top: 0px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 5px;
   }
-  .footer-menu {
-    display: flex;
-    margin-top: 20px;
-  }
-  footer a {
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    flex: 1 1 auto;
-  }
+
   footer a:hover,
   footer a:active,
   footer a:focus {
-    color: var(--bs-red);
+    color: $secondary !important;
     text-decoration: none;
   }
-  
-  .logo-footer {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-  }
-  .social-icons a {
-    color: white;
-    font-size: 18px;
-  }
-  
-  .social-icons a:hover {
-    color: var(--bs-red);
-  }
-  
-  /* Footer en mobile responsive */
-  @media (max-width: 767px) {
-    .footer-menu {
-      text-align: center;
+
+  @media (max-width: 992px) {
+    .logo-footer {
+      padding-top: 20px;
     }
-  
-    .footer-menu .row {
-      flex-direction: row;
-      align-items: center;
-    }
-  
     .social-icons {
-      margin-top: 10px;
+      padding-top: 30px;
     }
+    .nav-item {
+      padding-top: 20px;
+    }
+  }
+ 
+
+  .form-control {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 
-  
+  .form-text {
+    font-size: 27px;
+  }
+
+  .form-subtext {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .social {
+    margin: 10px;
+  }
